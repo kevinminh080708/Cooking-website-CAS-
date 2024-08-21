@@ -1,43 +1,128 @@
 @import 'footer.css';
-.topbar{
+@import url('https://fonts.cdnfonts.com/css/season');
+.topbar {
     position: fixed !important;
-    background-color: white;
+    background-color: transparent;
     overflow: hidden;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 3.5%; /* Adjusted margin on the left */
+    right: 3.5%; /* Adjusted margin on the right */
     height: 60px;
-    padding-top: 15px;
-    background-color: transparent;
-    width: 100%;
+    width: 93%; /* Adjusted width to fit within margins */
     z-index: 100;
+    border-radius: 20px; /* Increased radius for more noticeable curvature */
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    padding: 0 10px; /* Adds horizontal padding inside the .topbar */
+    box-sizing: border-box; /* Ensures padding is included in the width */
 }
+
 .topbar a {
-    color: black;
+    color: #031933;
     text-decoration: none;
     font-size: 17px;
-    font-weight: 100%;
+    font-weight: 500;
     padding: 14px 10px;
+    font-family: 'Season', sans-serif;
+    font-style: bold;
+                                                
 }
+
 .topbar a:hover {
-    color: gray;
+    color: #010d1c
 }
-.product .content {
-    width: 100%;
-    height: 100%;
+
+/* Container for the layout */
+.container {
+    display: flex; /* Use flexbox to align child elements horizontally */
+    justify-content: space-between; /* Ensure space between the background-container and column */
+    padding: 10vh 3.7vh 0; /* Padding at the top and sides */
+    box-sizing: border-box; /* Includes padding in the total width */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow */
 }
-.content1{
-    height: 60%;
+
+/* Styles for the content1 box */
+.content1 {
+    background-color: #010d1c;
+    border-radius: 3vh; /* Rounded corners of the box */
+    width: 45vh; /* Width of the box relative to viewport height */
+    height: 20vh; /* Height of the box relative to viewport height */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    box-sizing: border-box; /* Includes padding and border in the total width and height */
 }
-.content1 h1 {
-    margin-top: 35%;
-    text-align: center;
+
+/* Container for the image and text inside content1 */
+.content1 .content-wrapper {
+    display: flex; /* Use flexbox to align image and text horizontally */
+    width: 100%; /* Full width of the content1 box */
 }
-.content2 {
-    margin-top: -2%;
-    background-color: transparent;
-    text-align: center;
+
+/* Styles for the image inside content1 */
+.content1 img {
+    width: 30%; /* Width of the image relative to the content1 box */
+    height: 100%; /* Fill the height of the content1 box */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 3vh; /* Rounded corners for the image */
 }
-.content2 h1:hover {
-    color: transparent;
+
+/* Styles for the text inside content1 */
+.content1 .text {
+    width: 70%; /* Width of the text relative to the content1 box */
+    color: white; /* Text color */
+    font-size: 2vh; /* Font size relative to viewport height */
+    padding: 1vh; /* Padding around text */
+    box-sizing: border-box; /* Includes padding in the total width */
+}
+
+/* Container for the column of colored boxes */
+.column {
+    display: flex; /* Use flexbox to align child elements vertically */
+    flex-direction: column; /* Stack boxes vertically */
+    gap: 2vh; /* Space between the boxes */
+    padding-right: 3.7vh; /* Add padding to the right of the column */
+    box-sizing: border-box; /* Includes padding and border in the total width */
+    width: auto; /* Adjust width automatically */
+}
+
+/* Styles for each box inside the column */
+.column .box {
+    border-radius: 3vh; /* Rounded corners of the box */
+    height: 15vh; /* Height of each box in the column */
+    width: 45vh; /* Width of each box matching content1 width */
+    box-sizing: border-box; /* Includes padding and border in the total width */
+    background-size: cover; /* Cover the entire box with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+
+/* Container for the background boxes */
+.background-container {
+    display: flex; /* Use flexbox to align child elements horizontally */
+    flex-direction: column; /* Stack rows vertically */
+    gap: 2vh; /* Space between rows */
+    width: 45vh; /* Width of the container */
+    padding-right: 3.7vh; /* Add padding to the right of the container */
+    box-sizing: border-box; /* Includes padding and border in the total width */
+    height: auto; /* Adjust height automatically */
+}
+
+/* Styles for each row of background boxes */
+.background-row {
+    display: flex; /* Use flexbox to align child elements horizontally */
+    gap: 1vh; /* Space between the boxes */
+}
+
+/* Styles for each box inside the background container */
+.background-row .box {
+    border-radius: 3vh; /* Rounded corners of the box */
+    flex: 1; /* Allow each box to grow equally */
+    height: 20vh; /* Height of each box */
+    width: 20vh; /* Width of each box */
+    box-sizing: border-box; /* Includes padding and border in the total width */
+    background-size: cover; /* Cover the entire box with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
 }

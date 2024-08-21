@@ -9,7 +9,7 @@ function injectHtmlContent() {
                 <a href="/Html/catergories.html">Catergories</a>
                 <a href="/Html/specificrecipe.html">Specific Recipe</a>
                 <a href="/Html/about.html">About</a>
-                <a href="/Html/faq.html">Faq</a>
+                <a href="/Html/faq.html">FaQ</a>
                 <a href="/Html/helpandservice.html">Help service</a>
              </div>
     `;

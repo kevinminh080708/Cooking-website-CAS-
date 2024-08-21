@@ -23,12 +23,12 @@ const createFooter = () => {
             </a></li>
         </ul>
         <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="/codeiseasyweb/public/index.html">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="/codeiseasyweb/public/about.html">Catergories</a></li>
-          <li class="menu__item"><a class="menu__link" href="/codeiseasyweb/public/htmlpage.html">Specific Recipe</a></li>
-          <li class="menu__item"><a class="menu__link" href="/codeiseasyweb/public/csspage.html">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="/codeiseasyweb/public/jspage.html">Faq</a></li>
-            <li class="menu__item"><a class="menu__link" href="/codeiseasyweb/public/jspage.html">Help Service</a></li>
+          <li class="menu__item"><a class="menu__link" href="/Public/index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="/Html/catergories.html">Catergories</a></li>
+          <li class="menu__item"><a class="menu__link" href="/Html/specificrecipe.html">Specific Recipe</a></li>
+          <li class="menu__item"><a class="menu__link" href="/Html/about.html">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="/Html/faq.html">Faq</a></li>
+            <li class="menu__item"><a class="menu__link" href="/Html/helpandservice.html">Help Service</a></li>
         </ul>
         <p>&copy;2024 JCC team | All Rights Reserved</p>
       
