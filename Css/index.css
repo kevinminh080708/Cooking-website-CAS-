@@ -35,12 +35,11 @@
 /* Container for the layout */
 .container {
     display: flex; /* Use flexbox to align child elements horizontally */
-    justify-content: space-between; /* Ensure space between the background-container and column */
-    padding: 10vh 3.7vh 0; /* Padding at the top and sides */
+    gap: 2vh; /* Space between the background-container and column */
+    padding-left: 3.7vh; /* Add padding to the left of the container */
+    padding-right: 3.7vh; /* Add padding to the right of the container */
     box-sizing: border-box; /* Includes padding in the total width */
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Hide any overflow */
+    margin-top: 10vh; /* Space above the container */
 }
 
 /* Styles for the content1 box */
@@ -49,32 +48,22 @@
     border-radius: 3vh; /* Rounded corners of the box */
     width: 45vh; /* Width of the box relative to viewport height */
     height: 20vh; /* Height of the box relative to viewport height */
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
     box-sizing: border-box; /* Includes padding and border in the total width and height */
-}
-
-/* Container for the image and text inside content1 */
-.content1 .content-wrapper {
-    display: flex; /* Use flexbox to align image and text horizontally */
-    width: 100%; /* Full width of the content1 box */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center the items vertically */
+    position: relative; /* Positioning context for the image */
+    overflow: hidden; /* Ensure the image does not overflow */
 }
 
 /* Styles for the image inside content1 */
 .content1 img {
-    width: 30%; /* Width of the image relative to the content1 box */
-    height: 100%; /* Fill the height of the content1 box */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
-    border-radius: 3vh; /* Rounded corners for the image */
-}
-
-/* Styles for the text inside content1 */
-.content1 .text {
-    width: 70%; /* Width of the text relative to the content1 box */
-    color: white; /* Text color */
-    font-size: 2vh; /* Font size relative to viewport height */
-    padding: 1vh; /* Padding around text */
-    box-sizing: border-box; /* Includes padding in the total width */
+    width: 30%; /* Width of the image relative to the box */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Absolute positioning for the image */
+    right: 0; /* Align the image to the right edge of the box */
+    top: 50%; /* Center the image vertically */
+    transform: translateY(-50%); /* Center the image vertically within the box */
+    border-radius: 3vh; /* Optional: Rounded corners for the image */
 }
 
 /* Container for the column of colored boxes */
@@ -83,19 +72,16 @@
     flex-direction: column; /* Stack boxes vertically */
     gap: 2vh; /* Space between the boxes */
     padding-right: 3.7vh; /* Add padding to the right of the column */
-    box-sizing: border-box; /* Includes padding and border in the total width */
-    width: auto; /* Adjust width automatically */
+    box-sizing: border-box; /* Includes padding in the total width */
 }
 
 /* Styles for each box inside the column */
 .column .box {
+    background-color: #c0c0c0; /* Color for boxes in the column */
     border-radius: 3vh; /* Rounded corners of the box */
     height: 15vh; /* Height of each box in the column */
     width: 45vh; /* Width of each box matching content1 width */
     box-sizing: border-box; /* Includes padding and border in the total width */
-    background-size: cover; /* Cover the entire box with the background image */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent background image from repeating */
 }
 
 /* Container for the background boxes */
@@ -106,7 +92,6 @@
     width: 45vh; /* Width of the container */
     padding-right: 3.7vh; /* Add padding to the right of the container */
     box-sizing: border-box; /* Includes padding and border in the total width */
-    height: auto; /* Adjust height automatically */
 }
 
 /* Styles for each row of background boxes */
@@ -117,12 +102,10 @@
 
 /* Styles for each box inside the background container */
 .background-row .box {
+    background-color: #d0d0d0; /* Color for background boxes */
     border-radius: 3vh; /* Rounded corners of the box */
     flex: 1; /* Allow each box to grow equally */
     height: 20vh; /* Height of each box */
     width: 20vh; /* Width of each box */
     box-sizing: border-box; /* Includes padding and border in the total width */
-    background-size: cover; /* Cover the entire box with the background image */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent background image from repeating */
 }
