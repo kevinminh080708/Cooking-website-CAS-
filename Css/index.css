@@ -56,6 +56,7 @@ body {
     grid-column: 1 / span 2;
     grid-row: 1 / span 30;
     border-radius: 5%;
+    width: 107%
   }
   
   .item2 {
@@ -72,6 +73,7 @@ body {
     width: 75%;
     margin-left: 10%;
   }
+  
   .slogan {
     grid-column: 3 / span 2;
     grid-row: 1 / span 20;
@@ -86,14 +88,71 @@ body {
     grid-column: 1 / span 2;
     grid-row: 32 / span 35;
     border-radius: 5%;
+    width: 107%
   }
   .item5 {
     grid-column: 1 / span 2;
     grid-row: 70 / span 35;
     border-radius: 5%;
+    width: 107%
   }
   .item6 {
     grid-column: 1 / span 2;
     grid-row: 109 / span 35;
     border-radius: 5%;
+    width: 107%
   }
+
+  .item7 {
+    grid-column: 3 / span 2; /* Spanning across two columns to match item2 and item3 */
+    grid-row: 58 / span 25; /* Placing it right below item2 and item3 */
+    border-radius: 5%;
+    width: 37%;
+    margin-left: 10%;
+  }
+  .item8 {
+    grid-column: 4; /* Same column as item3 */
+    grid-row: 58 / span 25; /* Position right below item3 */
+    border-radius: 5%;
+    width: 75%;
+    margin-left: 10%;
+}
+
+.item9 {
+    grid-column: 4; /* Same column as item3 */
+    grid-row: 84 / span 25; /* Position right below item14 */
+    border-radius: 5%;
+    width: 75%;
+    margin-left: 10%;
+}
+
+.item10 {
+    grid-column: 4; /* Same column as item3 */
+    grid-row: 110 / span 25; /* Position right below item15 */
+    border-radius: 5%;
+    width: 75%;
+    margin-left: 10%;
+}
+.item11 {
+  grid-column: 3; /* Same column as item2 */
+  grid-row: 58 / span 25; /* Position right below item2 */
+  border-radius: 5%;
+  width: 75%;
+  margin-left: 20%;
+}
+
+.item12 {
+  grid-column: 3; /* Same column as item2 */
+  grid-row: 84 / span 25; /* Position right below item17 */
+  border-radius: 5%;
+  width: 75%;
+  margin-left: 20%;
+}
+
+.item13 {
+  grid-column: 3; /* Same column as item2 */
+  grid-row: 110 / span 25; /* Position right below item18 */
+  border-radius: 5%;
+  width: 75%;
+  margin-left: 20%;
+}
