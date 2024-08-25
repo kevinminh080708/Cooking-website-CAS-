@@ -86,19 +86,19 @@ body {
   }
   .item4 {
     grid-column: 1 / span 2;
-    grid-row: 32 / span 35;
+    grid-row: 32 / span 30;
     border-radius: 5%;
     width: 107%
   }
   .item5 {
     grid-column: 1 / span 2;
-    grid-row: 70 / span 35;
+    grid-row: 70 / span 30;
     border-radius: 5%;
     width: 107%
   }
   .item6 {
     grid-column: 1 / span 2;
-    grid-row: 109 / span 35;
+    grid-row: 109 / span 30;
     border-radius: 5%;
     width: 107%
   }
