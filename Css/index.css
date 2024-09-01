@@ -20,7 +20,36 @@ body {
     box-sizing: border-box; /* Ensures padding is included in the width */
     margin-top: 1%;
 }
-
+.search {
+  position: absolute;
+  right: 200px;
+}
+.search input {
+  border-radius: 25px;
+  height: 30px;
+  padding: 8px 40px 8px 20px;
+  font-size: 13px;
+  border: none;
+  background-color: #faebd7;
+}
+.search button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.logo {
+  position: absolute;
+  width: 184px;
+  height: 150px;
+  right: 20px;
+  margin-top: 15px;
+}
 .topbar a {
     color: #faebd7;
     text-decoration: none;
@@ -32,7 +61,7 @@ body {
 }
 
 .topbar a:hover {
-    color: goldenrod;
+    color: #010d1c
 }
 
 .grid-container {
@@ -63,14 +92,14 @@ body {
     grid-column: 3;
     grid-row: 32 / span 25;
     border-radius: 5%;
-    width: 79%;
-    margin-left: 30%;
+    width: 75%;
+    margin-left: 20%;
   }
   .item3 {
     grid-column: 4;
     grid-row: 32 / span 25;
     border-radius: 5%;
-    width: 79%;
+    width: 75%;
     margin-left: 10%;
   }
   
@@ -86,28 +115,35 @@ body {
   }
   .item4 {
     grid-column: 1 / span 2;
-    grid-row: 32 / span 30;
+    grid-row: 32 / span 35;
     border-radius: 5%;
     width: 107%
   }
   .item5 {
     grid-column: 1 / span 2;
-    grid-row: 70 / span 30;
+    grid-row: 70 / span 35;
     border-radius: 5%;
     width: 107%
   }
   .item6 {
     grid-column: 1 / span 2;
-    grid-row: 109 / span 30;
+    grid-row: 109 / span 35;
     border-radius: 5%;
     width: 107%
   }
-  
+
+  .item7 {
+    grid-column: 3 / span 2; /* Spanning across two columns to match item2 and item3 */
+    grid-row: 58 / span 25; /* Placing it right below item2 and item3 */
+    border-radius: 5%;
+    width: 37%;
+    margin-left: 10%;
+  }
   .item8 {
     grid-column: 4; /* Same column as item3 */
     grid-row: 58 / span 25; /* Position right below item3 */
     border-radius: 5%;
-    width: 79%;
+    width: 75%;
     margin-left: 10%;
 }
 
@@ -115,7 +151,7 @@ body {
     grid-column: 4; /* Same column as item3 */
     grid-row: 84 / span 25; /* Position right below item14 */
     border-radius: 5%;
-    width: 79%;
+    width: 75%;
     margin-left: 10%;
 }
 
@@ -123,38 +159,29 @@ body {
     grid-column: 4; /* Same column as item3 */
     grid-row: 110 / span 25; /* Position right below item15 */
     border-radius: 5%;
-    width: 79%;
+    width: 75%;
     margin-left: 10%;
 }
 .item11 {
   grid-column: 3; /* Same column as item2 */
   grid-row: 58 / span 25; /* Position right below item2 */
   border-radius: 5%;
-  width: 79%;
-  margin-left: 30%;
+  width: 75%;
+  margin-left: 20%;
 }
 
 .item12 {
   grid-column: 3; /* Same column as item2 */
   grid-row: 84 / span 25; /* Position right below item17 */
   border-radius: 5%;
-  width: 79%;
-  margin-left: 30%;
+  width: 75%;
+  margin-left: 20%;
 }
 
 .item13 {
   grid-column: 3; /* Same column as item2 */
   grid-row: 110 / span 25; /* Position right below item18 */
   border-radius: 5%;
-  width: 79%;
-  margin-left: 30%;
-}
-
-.contentframe {
-
- 
-}
-.contentframe img{
-  width: 70vh;
-  height: 35vh;
+  width: 75%;
+  margin-left: 20%;
 }
