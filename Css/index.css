@@ -20,7 +20,36 @@ body {
     box-sizing: border-box; /* Ensures padding is included in the width */
     margin-top: 1%;
 }
-
+.search {
+  position: absolute;
+  right: 200px;
+}
+.search input {
+  border-radius: 25px;
+  height: 30px;
+  padding: 8px 40px 8px 20px;
+  font-size: 13px;
+  border: none;
+  background-color: #faebd7;
+}
+.search button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.logo {
+  position: absolute;
+  width: 184px;
+  height: 150px;
+  right: 20px;
+  margin-top: 15px;
+}
 .topbar a {
     color: #faebd7;
     text-decoration: none;
@@ -32,39 +61,129 @@ body {
 }
 
 .topbar a:hover {
-    color: goldenrod;
+    color: #010d1c
 }
 
 .grid-container {
-  display: grid;
-  gap: 10px;
-  background-color: transparent;
-  padding: 10px;
-  margin-top: 9%;
-  margin-left: 2.7%;
-  margin-right: 2.5%;
+    display: grid;
+    gap: 10px;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 9%;
+    margin-left: 2.7%;
+    margin-right: 2.5%;
+  }
+  
+  .grid-item {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 30;
+    border-radius: 5%;
+    width: 107%
+  }
+  
+  .item2 {
+    grid-column: 3;
+    grid-row: 32 / span 25;
+    border-radius: 5%;
+    width: 79%;
+    margin-left: 30%;
+  }
+  .item3 {
+    grid-column: 4;
+    grid-row: 32 / span 25;
+    border-radius: 5%;
+    width: 79%;
+    margin-left: 10%;
+  }
+  
+  .slogan {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 20;
+    border-radius: 5%;
+    text-align: center;
+    margin-top: 15%;
+    font-size: xx-large;
+    color: #010d1c;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .item4 {
+    grid-column: 1 / span 2;
+    grid-row: 32 / span 30;
+    border-radius: 5%;
+    width: 107%
+  }
+  .item5 {
+    grid-column: 1 / span 2;
+    grid-row: 70 / span 30;
+    border-radius: 5%;
+    width: 107%
+  }
+  .item6 {
+    grid-column: 1 / span 2;
+    grid-row: 109 / span 30;
+    border-radius: 5%;
+    width: 107%
+  }
+  
+  .item8 {
+    grid-column: 4; /* Same column as item3 */
+    grid-row: 58 / span 25; /* Position right below item3 */
+    border-radius: 5%;
+    width: 79%;
+    margin-left: 10%;
 }
 
-.grid-item {
-  background-color: black;
-  text-align: left; /* Align text to the left */
-  padding: 20px;
-  font-size: 16px;
-  color: white;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
+.item9 {
+    grid-column: 4; /* Same column as item3 */
+    grid-row: 84 / span 25; /* Position right below item14 */
+    border-radius: 5%;
+    width: 79%;
+    margin-left: 10%;
 }
 
-.header {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px; /* Space between header and content */
-  color: #faebd7; /* Header color */
+.item10 {
+    grid-column: 4; /* Same column as item3 */
+    grid-row: 110 / span 25; /* Position right below item15 */
+    border-radius: 5%;
+    width: 79%;
+    margin-left: 10%;
+}
+.item11 {
+  grid-column: 3; /* Same column as item2 */
+  grid-row: 58 / span 25; /* Position right below item2 */
+  border-radius: 5%;
+  width: 79%;
+  margin-left: 30%;
 }
 
-.content {
-  font-size: 16px;
-  line-height: 1.5; /* Adds space between lines */
+.item12 {
+  grid-column: 3; /* Same column as item2 */
+  grid-row: 84 / span 25; /* Position right below item17 */
+  border-radius: 5%;
+  width: 79%;
+  margin-left: 30%;
 }
 
+.item13 {
+  grid-column: 3; /* Same column as item2 */
+  grid-row: 110 / span 25; /* Position right below item18 */
+  border-radius: 5%;
+  width: 79%;
+  margin-left: 30%;
+}
+
+.contentframe {
+
+ 
+}
+.contentframe img{
+  width: 70vh;
+  height: 35vh;
+}
