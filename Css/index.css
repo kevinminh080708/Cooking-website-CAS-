@@ -195,7 +195,7 @@ html {
   font-family: system-ui;
   -webkit-font-smoothing: antialiased;
   padding: 20px 0;
-  margin-top: 10%;
+  margin-top: 7%;
 }
 
 header {
@@ -286,4 +286,8 @@ header {
       font-size: 24px;
     }
   }
+}
+.coolarticlestitle{
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
