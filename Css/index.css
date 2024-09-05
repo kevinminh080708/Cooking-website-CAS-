@@ -254,7 +254,7 @@ header {
   
   h1 {
     font-size: 20px;
-    margin: 0;
+    margin:0 ;
     color: #333;
   }
   
@@ -287,4 +287,7 @@ header {
       font-size: 24px;
     }
   }
+}
+.coolarticlestitle {
+  margin-bottom: 2%;
 }
