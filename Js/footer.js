@@ -9,7 +9,7 @@ const createFooter = () => {
           <div class="wave" id="wave4"></div>
         </div>
         <ul class="social-icon">
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/profile.php?id=61565116670838">
               <ion-icon name="logo-facebook"></ion-icon>
             </a></li>
           <li class="social-icon__item"><a class="social-icon__link" href="#">
@@ -32,7 +32,7 @@ const createFooter = () => {
         </ul>
         <p>&copy;2024 YCC team | All Rights Reserved</p>
         <p>Contact</p>
-        <p>youcancookad@gmail.com</p>
+        <p><a href="mailto:youcancookad@gmail.com">youcancookad@gmail.com</a></p>
       
     `;
 }

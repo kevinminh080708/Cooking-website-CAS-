@@ -1,10 +1,11 @@
 
 @import 'footer.css';
 @import url('https://fonts.cdnfonts.com/css/season');
-
+@import '/Css/about.css';
 
 body {
     background-color: #faebd7;
+    overflow-x: hidden;
 }
 .topbar {
     position: fixed !important;
@@ -286,8 +287,4 @@ header {
       font-size: 24px;
     }
   }
-}
-.coolarticlestitle{
-  margin-top: -20px;
-  margin-bottom: 20px;
 }
