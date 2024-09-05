@@ -5,6 +5,7 @@
 
 body {
     background-color: #faebd7;
+    overflow-x: hidden;
 }
 .topbar {
     position: fixed !important;
