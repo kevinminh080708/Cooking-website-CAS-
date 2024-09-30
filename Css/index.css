@@ -291,3 +291,56 @@ header {
 .coolarticlestitle {
   margin-bottom: 2%;
 }
+
+
+
+
+/* General styling for the team section */
+.team-section {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f3e9db;
+  border-radius: 10px;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #4f3222;
+}
+
+/* Flexbox to align members */
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Styling individual member cards */
+.team-member {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  color: #4f3222;
+}
+
+.team-member p {
+  color: #765942;
+  font-size: 1rem;
+}
