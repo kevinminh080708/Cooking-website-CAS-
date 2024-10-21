@@ -346,6 +346,7 @@ header {
 .team-member p {
   color: #765942;
   font-size: 1rem;
+}
 =======
 @media screen and (max-width: 1024px){
   .topbar a{
@@ -362,11 +363,23 @@ header {
     display: none;
   }
   .search button{
-    left: 200px;
+    left: 170px;
   }
   .search{
-    left: 62%;
+    left: 50%;
  }
+  .search input{
+    width: 200px;
+    height: 25px;
+    font-size: 11px;
+  }
+  .logo{
+    display: flex;
+    left: 75%;
+  }
+  .topbar a{
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 426px){
   .topbar a.hideonmobile{
@@ -387,7 +400,7 @@ header {
     display: flex;
     width: 154px;
     height: 130px;
-    right: 2px;
+    left: 60%;
   }
   .coolarticlestitle{
     margin-top: 30px;

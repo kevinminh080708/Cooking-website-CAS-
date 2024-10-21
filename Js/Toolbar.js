@@ -19,10 +19,10 @@ function injectHtmlContent() {
                 <li onclick=showsidebar()><a href="menu"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#faebd7"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></svg></a></li>
                 <a href="/Public/index.html" class="hideonmobile">Home</a>
                 <a href="/Html/catergories.html" class="hideonmobile">Catergories</a>
-                <a href="/Html/specificrecipe.html" class="hideonmobile">Specific Recipe</a>
+            
                 <a href="/Html/about.html" class="hideonmobile">About</a>
                 <a href="/Html/faq.html" class="hideonmobile">FaQ</a>
-                <a href="/Html/helpandservice.html" class="hideonmobile">Help service</a>       
+                    
                 <img class="logo " src="../picture/weblogo.png" alt="logo">
                 <div class="search">
                     <form>
