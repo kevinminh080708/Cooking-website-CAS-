@@ -6,6 +6,7 @@
 body {
     background-color: #faebd7;
     overflow-x: hidden;
+   
 }
 .topbar {
     position: fixed !important;
@@ -317,7 +318,7 @@ header {
 .team-members {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 /* Styling individual member cards */
