@@ -348,4 +348,89 @@ header {
   color: #765942;
   font-size: 1rem;
 }
+@media screen and (max-width: 1024px){
+  .topbar a{
+    font-size: 14px;
+    padding: 0px 5px;
+  }
+}
+@media screen and (max-width: 768px){
+  .topbar a{
+    font-size: 12px;
+    padding: 0px 5px;
+  }
+  .logo{
+    display: none;
+  }
+  .search button{
+    left: 170px;
+  }
+  .search{
+    left: 50%;
+ }
+  .search input{
+    width: 200px;
+    height: 25px;
+    font-size: 11px;
+  }
+  .logo{
+    display: flex;
+    left: 75%;
+  }
+  .topbar a{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 426px){
+  .topbar a.hideonmobile{
+    display: none;
+  }
+  .search button{
+    left: 170px;
+  }
+  .search{
+    left: 12%;
+  }
+  .search input{
+    width: 200px;
+    height: 25px;
+    font-size: 11px;
+  }
+  .logo{
+    display: flex;
+    width: 154px;
+    height: 130px;
+    left: 60%;
+  }
+  .coolarticlestitle{
+    margin-top: 30px;
+  }
+}
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #faebd7b0;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+  .sidebar a{
+    padding: 17px 0 17px 10px ;
+    color: #010d1c;
+    font-size: 22px;
+    font-family: "Playfair Display SC", sans-serif;
+}
+  .sidebar li{
+    width: 100%;
+}
+  .sidebar a{
+    width: 100%;
+>>>>>>> 99c93bc52e5b425543754b0202d3a696c191ff34
 }
