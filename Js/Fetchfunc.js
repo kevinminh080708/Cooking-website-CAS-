@@ -1,39 +1,30 @@
-// /Js/fetchfunc.js
-import { db } from '/Js/firebase-config.js'; // Import the Firestore instance
+// /Js/Fetchfunc.js
+import { db } from './firebase-config.js'; // Ensure this is correctly pointing to your Firebase config
 import { collection, getDocs } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
 
-async function fetchArticles() {
+document.addEventListener('DOMContentLoaded', async () => {
     const articlesContainer = document.getElementById('articlesContainer');
-    articlesContainer.innerHTML = ''; // Clear the container before fetching new articles
-
     try {
-        const querySnapshot = await getDocs(collection(db, "articles")); // Fetch articles from Firestore
-        if (!querySnapshot.empty) {
-            querySnapshot.forEach((doc) => {
-                const article = doc.data(); // Get article data
-                const articleItem = document.createElement('div');
-                articleItem.className = 'article-item'; // Add a class for styling
+        const articlesSnapshot = await getDocs(collection(db, 'articles'));
 
-                // Set inner HTML with article data
-                articleItem.innerHTML = `
-                    <a href="${article.link}" class="card" target="_blank">
-                        <div class="thumb" style="background-image: url(${article.image});"></div>
-                        <article>
-                            <h1>${article.title}</h1>
-                            <p>${article.description || 'No description available.'}</p>
-                            <span>Author: ${article.author}</span>
-                        </article>
-                    </a>
-                `;
-                articlesContainer.appendChild(articleItem); // Append the article item to the container
-            });
-        } else {
-            articlesContainer.innerHTML = '<p>No articles found.</p>'; // Handle no articles
-        }
+        articlesSnapshot.forEach(doc => {
+            const article = doc.data();
+            const articleItem = document.createElement('div');
+            articleItem.className = `item-${articlesContainer.children.length + 1}`;
+
+            articleItem.innerHTML = `
+                <a href="${article.link}" class="card">
+                    <div class="thumb" style="background-image: url(${article.image});"></div>
+                    <article>
+                        <h1>${article.title}</h1>
+                        <p>${article.description ? article.description : 'No description available.'}</p>
+                        <span>${article.author}</span>
+                    </article>
+                </a>
+            `;
+            articlesContainer.appendChild(articleItem);
+        });
     } catch (error) {
-        console.error('Error fetching articles:', error); // Log any errors
+        console.error('Error fetching articles:', error);
     }
-}
-
-// Fetch articles on DOMContentLoaded
-document.addEventListener('DOMContentLoaded', fetchArticles);
+});
