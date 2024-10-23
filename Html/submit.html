@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit New Article</title>
+</head>
+<body>
+
+  <h1>Submit a New Article</h1>
+  <form id="articleForm">
+    <input type="text" id="title" placeholder="Article Title" required><br>
+    <input type="url" id="link" placeholder="Article Link" required><br>
+    <input type="url" id="image" placeholder="Image URL" required><br>
+    <input type="text" id="author" placeholder="Author Name" required><br>
+    <textarea id="description" placeholder="Article Description"></textarea><br>
+    <button type="submit">Submit Article</button>
+  </form>
+
+  <script type="module">
+    import { db } from '/Js/firebase-config.js';  // Use the exported db instance
+    import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
+
+    const articleForm = document.getElementById('articleForm');
+
+    articleForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const title = document.getElementById('title').value;
+      const link = document.getElementById('link').value;
+      const image = document.getElementById('image').value;
+      const author = document.getElementById('author').value;
+      const description = document.getElementById('description').value;
+
+      const newArticle = { title, link, image, author, description };
+
+      try {
+        await addDoc(collection(db, "articles"), newArticle);
+        alert('Article submitted successfully!');
+        articleForm.reset();
+      } catch (error) {
+        console.error('Error submitting article:', error);
+      }
+    });
+  </script>
+
+<script type="module" src="/Js/fetchfunc.js" defer></script>
+
+
+</body>
+</html>
