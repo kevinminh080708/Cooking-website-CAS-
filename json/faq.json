@@ -8,8 +8,11 @@
       "answer": "Check every Monday for fresh content!"
     },
     {
-      "question": "How often are new recipes released?",
+      "question": "Chef info?",
       "answer": "We release new seasonal recipes regularly."
+    },
+    {
+      "question": "Contact",
+      "answer": "contact chef info"
     }
   ]
-  

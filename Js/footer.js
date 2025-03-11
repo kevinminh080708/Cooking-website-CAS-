@@ -31,7 +31,7 @@ const createFooter = () => {
             <li class="menu__item"><a class="menu__link" href="/Html/helpandservice.html">Help Service</a></li>
         </ul>
         <p>&copy;2024 YCC team | All Rights Reserved</p>
-        <p>Contact</p>
+        <p ondblclick="window.location.href='/Html/submit.html'" >Contact</p>
         <p><a href="mailto:youcancookad@gmail.com">youcancookad@gmail.com</a></p>
       
     `;
