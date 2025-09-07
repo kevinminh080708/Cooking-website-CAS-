@@ -1,7 +1,7 @@
 
 @import 'footer.css';
 @import url('https://fonts.cdnfonts.com/css/season');
-@import '/Css/about.css';
+@import 'Css/about.css';
 
 body {
     background-color: #faebd7;
