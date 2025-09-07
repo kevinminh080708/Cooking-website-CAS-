@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const faqContainer = document.getElementById('faq-container');
   
     // Fetch the JSON data
-    fetch('/json/faq.json')
+    fetch('json/faq.json')
       .then((response) => response.json())
       .then((data) => {
         data.forEach((item) => {
