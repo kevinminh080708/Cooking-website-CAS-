@@ -23,15 +23,15 @@ const createFooter = () => {
             </a></li>
         </ul>
         <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="/Public/index.html">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="/Html/catergories.html">Catergories</a></li>
-          <li class="menu__item"><a class="menu__link" href="/Html/specificrecipe.html">Specific Recipe</a></li>
-          <li class="menu__item"><a class="menu__link" href="/Html/about.html">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="/Html/faq.html">Faq</a></li>
-            <li class="menu__item"><a class="menu__link" href="/Html/helpandservice.html">Help Service</a></li>
+          <li class="menu__item"><a class="menu__link" href="Public/index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="Html/catergories.html">Catergories</a></li>
+          <li class="menu__item"><a class="menu__link" href="Html/specificrecipe.html">Specific Recipe</a></li>
+          <li class="menu__item"><a class="menu__link" href="Html/about.html">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="Html/faq.html">Faq</a></li>
+            <li class="menu__item"><a class="menu__link" href="Html/helpandservice.html">Help Service</a></li>
         </ul>
         <p>&copy;2024 YCC team | All Rights Reserved</p>
-        <p ondblclick="window.location.href='/Html/submit.html'" >Contact</p>
+        <p ondblclick="window.location.href='Html/submit.html'" >Contact</p>
         <p><a href="mailto:youcancookad@gmail.com">youcancookad@gmail.com</a></p>
       
     `;
